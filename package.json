@@ -1,0 +1,25 @@
+{
+  "name": "yupana",
+  "version": "1.0.0",
+  "description": "Console-based math problem generator",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/slashinfty/yupana.git"
+  },
+  "author": "Matt Braddock",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/slashinfty/yupana/issues"
+  },
+  "homepage": "https://github.com/slashinfty/yupana#readme",
+  "dependencies": {
+    "chalk": "^5.0.1",
+    "readline-sync": "^1.4.10",
+    "xorshift": "^1.2.0"
+  }
+}
