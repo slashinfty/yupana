@@ -9,7 +9,7 @@ import * as Yupana from './src/index.js';
 const types = fs.readdirSync('./src').filter(file => file.endsWith('.js') && file !== 'index.js').map(file => file.replace('.js', ''));
 rl.setDefaultOptions({
     limit: [...types, 'help'],
-    limitMessage: 'Sorry, $<lastInput> is not a valid option.'
+    limitMessage: `\nSorry, $<lastInput> is not a valid option. Try ${chalk.yellow('help')} to get a list of options.`
 });
 
 // formatting
@@ -31,5 +31,5 @@ while (true) {
     }
     
     const type = Yupana[input];
-    
+    log(type.result(type.options));
 }
